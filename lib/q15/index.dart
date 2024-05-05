@@ -4,6 +4,24 @@ class Product {
   int quantity;
 
   Product(this.name, this.price, this.quantity);
+
+  @override
+  String toString() => "OrderItem < $name, $price, $quantity >";
+
+  @override
+  int get hashCode => Object.hash(
+        name.hashCode,
+        price.hashCode,
+        quantity.hashCode,
+      );
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        other is Product &&
+            runtimeType == other.runtimeType &&
+            hashCode == other.hashCode;
+  }
 }
 
 class OrderItem {
@@ -11,6 +29,23 @@ class OrderItem {
   int quantity;
 
   OrderItem(this.product, this.quantity);
+
+  @override
+  String toString() => "OrderItem < ${product.toString()}, $quantity >";
+
+  @override
+  int get hashCode => Object.hash(
+        product.hashCode,
+        quantity.hashCode,
+      );
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        other is OrderItem &&
+            runtimeType == other.runtimeType &&
+            hashCode == other.hashCode;
+  }
 }
 
 class OnlineStore {

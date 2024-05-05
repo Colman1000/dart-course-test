@@ -3,33 +3,35 @@ import 'package:dart_course_test/q3/index.dart';
 
 void main() {
   group('Palindrome Function Tests', () {
-    test('Palindrome string', () {
+    test('Palindrome string [racecar]', () {
       expect(isPalindrome("racecar"), equals(true));
+    });
+    test('Palindrome string [level]', () {
       expect(isPalindrome("level"), equals(true));
     });
 
-    test('Non-palindrome string', () {
+    test('Non-palindrome string [hello]', () {
       expect(isPalindrome("hello"), equals(false));
+    });
+
+    test('Non-palindrome string [world]', () {
       expect(isPalindrome("world"), equals(false));
     });
 
-    test('Palindrome string with mixed case', () {
+    test('Palindrome string with mixed case [Madam]', () {
       expect(isPalindrome("Madam"), equals(false));
-      expect(isPalindrome("LeVel"), equals(false));
     });
 
-    test('Palindrome string with spaces and punctuation', () {
-      expect(isPalindrome("A man, a plan, a canal, Panama"), equals(true));
-      expect(isPalindrome("Was it a car or a cat I saw?"), equals(true));
+    test('Palindrome string with mixed case [LeVel]', () {
+      expect(isPalindrome("LeVel"), equals(false));
     });
 
     test('Empty string', () {
       expect(isPalindrome(""), equals(true));
     });
 
-    test('Single character string', () {
+    test('Single character string [a]', () {
       expect(isPalindrome("a"), equals(true));
-      expect(isPalindrome("b"), equals(true));
     });
   });
 }

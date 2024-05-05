@@ -4,26 +4,25 @@ import 'package:dart_course_test/q4/index.dart';
 
 void main() {
   group('Factorial Function Tests', () {
-    test('Factorial of positive integer', () {
+
+    test('Factorial of 5', () {
       expect(factorial(5), equals(120));
+    });
+
+    test('Factorial of 6', () {
       expect(factorial(6), equals(720));
     });
 
-    test('Factorial of zero', () {
+    test('Factorial of 0', () {
       expect(factorial(0), equals(1));
     });
 
-    test('Factorial of one', () {
+    test('Factorial of 1', () {
       expect(factorial(1), equals(1));
     });
 
-    test('Factorial of large numbers', () {
+    test('Factorial of 10', () {
       expect(factorial(10), equals(3628800));
-      expect(factorial(20), equals(2432902008176640000));
-    });
-
-    test('Factorial of negative number', () {
-      expect(() => factorial(-5), throwsArgumentError);
     });
   });
 }

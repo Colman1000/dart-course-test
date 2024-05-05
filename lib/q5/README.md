@@ -30,7 +30,7 @@ leading or trailing spaces.
 ### Examples:
 
 ```dart
-reverseWords("Hello World");                    // Output: "olleH dlroW"
-reverseWords("  Welcome   to TypeScript   ");   // Output: "emocleW ot tpircSepyT"
-reverseWords("  TypeScript is Awesome   ");     // Output: "tpircSepyT si emosewA"
+reverseWords("Hello World");             // Output: "olleH dlroW"
+reverseWords("Welcome to TypeScript");   // Output: "emocleW ot tpircSepyT"
+reverseWords("TypeScript is Awesome");   // Output: "tpircSepyT si emosewA"
 ```

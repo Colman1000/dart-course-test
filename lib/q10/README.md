@@ -24,5 +24,5 @@ The function returns the count of numbers in the list that are greater than the 
 
 ```dart
 countGreaterThanAverage([1, 2, 3, 4, 5]); // Output: 2 (4 and 5 are greater than the average, which is 3)
-countGreaterThanAverage([10, 20, 30]);    // Output: 3 (all numbers are greater than the average, which is 20)
+countGreaterThanAverage([10, 20, 30]);    // Output: 1 (only 30 is greater than the average, which is 20)
 ```
