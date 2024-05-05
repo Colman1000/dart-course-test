@@ -15,6 +15,7 @@ You'll find `15 thrilling challenges` awaiting your code mastery. Navigate throu
 Feeling confident? Fantastic! But remember to:
 
 🔍 Read the challenge instructions carefully.
+
 🕒 Take your time - quality over speed.
 
 And whenever you're ready to put your solution to the test:
@@ -27,6 +28,7 @@ dart test test/q1.dart
 
 ### Pro Tips:
 🌟 Aim to complete as many challenges as you can.
+
 📖 Stay attentive to every challenge's unique requirements.
 
 ### Ready to Embark?
